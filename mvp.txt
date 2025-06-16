@@ -1,0 +1,40 @@
+## ✅ Step 1: Define the MVP (Minimum Viable Product)
+
+Before writing any code, it's critical to **nail down exactly what the first version of Submind will do.** Here's a solid MVP scope:
+
+---
+
+### 🔹 Submind MVP Goal:
+
+> "Create a local multi-agent AI system that accepts personal goals as input, plans a sequence of tasks, and executes those tasks autonomously overnight to generate code or reports, which are saved and available to the user in the morning."
+
+---
+
+### 🎯 MVP Features
+
+1. **Command-line interface** to set a personal goal (e.g., “Build a personal blog with Next.js” or “Generate a study plan for calculus”).
+2. **Task planner agent** that breaks the goal into sub-tasks.
+3. **Specialized agents** (coder, researcher, writer) that handle each sub-task.
+4. **Autonomous loop** that runs overnight (simulated with `async` job queue and sleep/delay).
+5. **Local storage** of outputs in a structured folder (e.g., `/submind_outputs/yyyy-mm-dd/`).
+6. **Single-user mode**, no authentication needed yet.
+
+---
+
+### 🔧 Tools & Stack for MVP
+
+| Component                  | Tech                                   |
+| -------------------------- | -------------------------------------- |
+| Language                   | Python 3.10+                           |
+| AI models (local/remote)   | OpenAI API (GPT-4) OR Ollama/LM Studio |
+| Task scheduling            | `asyncio` + background loop            |
+| Memory (short-term)        | In-memory or JSON files                |
+| Storage/output             | Markdown/HTML/PDF reports              |
+| CLI                        | `argparse` or `Typer`                  |
+| Agent framework (optional) | `Langchain`, `CrewAI`, or custom       |
+
+---
+
+Once this scope looks good to you, Step 2 will be to **set up the basic project scaffold and CLI interface**.
+
+Want to move to Step 2?
