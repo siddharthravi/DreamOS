@@ -1,4 +1,4 @@
-# 🧠 Submind
+# 🧠 DreamOS
 
 Submind is a local, multi-agent AI assistant that autonomously thinks, plans, and generates actionable output (code, writing, insights) overnight — all based on your personal goals. It’s like having a second brain that works while you sleep.
 
